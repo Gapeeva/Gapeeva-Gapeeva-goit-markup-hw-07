@@ -28,8 +28,7 @@
         </ul>
       </nav>
 
-        <button class="btn-mobile-menu js-open-menu" aria-expanded="false"
-             aria-controls="mobile-menu" type="button" >
+        <button class="btn-mobile-menu" data-menu-open type="button" >
           <svg class="mobile-menu-icon" width="32" height="22">
           <use href="./images/icons.svg#icon-burger"></use>
          </svg></button>
@@ -41,22 +40,67 @@
         </ul>
       </address>
       </div>
+                              <!--mobile-menu-->
+   <div class="mobile-menu is-hidden" data-menu>
+    <div class="menu">
+      <button data-menu-close class="btn-mobile" type="button" ><svg width="24" height="24">
+             <use href="./images/icons.svg#icon-clos"></use>
+        </svg></button>
+        <ul class="menu-list list">
+          <li class="menu-item"><a class="menu-link link current" href="./index.html">Studio</a></li>
+          <li class="menu-item"><a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
+          <li class="menu-item"><a class="menu-link link" href="">Contacts</a></li>
+        </ul>
+        <address class="menu-address">
+          <ul class="menu-list list">
+            <li class="menu-item-tel"><a class="menu-link-tel link current" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <li class="menu-item"><a class="menu-link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              </ul>
+        </address>
+        <ul class="mob-soc-list">
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="">
+              <svg class="mob-soc-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-Ellipse"></use>
+              </svg></a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="">
+              <svg class="mob-soc-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-Ellipse-1"></use>
+              </svg></a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="">
+              <svg class="mob-soc-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-Ellipse-2"></use>
+              </svg></a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="">
+              <svg class="mob-soc-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-Ellipse-3"></use>
+              </svg></a>
+          </li>
+        </ul>
+        </div>
+        </div>
         </header>
-                                            <!--hero image-->
-    <!-- <main class="main">
+                                            <!--hero-->
+    <main class="main">
        <section class="hero">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button type="button" class="button hero-button" data-modal-open>Order Service</button>
-      </section>  -->
+      </section>  
                                               <!--advantage-->
-      <!-- <section class="advantage"> 
+      <section class="advantage"> 
          <div class="container">
           <h2 hidden>option2</h2>
           <ul class="advantage-list list">
       
             <li class="advantage-link">
               <div class="advantage-block">
-                <svg class="advantage-icon" width="64" hight="64">
+                <svg class="advantage-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -69,7 +113,7 @@
       
             <li class="advantage-link">
               <div class="advantage-block">
-                <svg class="advantage-icon" width="64" hight="64">
+                <svg class="advantage-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -82,7 +126,7 @@
       
             <li class="advantage-link">
               <div class="advantage-block">
-                <svg class="advantage-icon" width="64" hight="64">
+                <svg class="advantage-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -95,7 +139,7 @@
       
             <li class="advantage-link">
               <div class="advantage-block">
-                <svg class="advantage-icon" width="64" hight="64">
+                <svg class="advantage-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -107,9 +151,9 @@
             </li>
           </ul>
         </div>
-      </section>    -->
+      </section>    
                                            <!--section-->
-       <!-- <section class="section">
+       <section class="section">
         <div class="container">
         <h2 class="section-title">What are we doing</h2>
         <ul class="section-list list">
@@ -124,14 +168,14 @@
           </li>
         </ul>
         </div>
-      </section>   -->
+      </section>   
                                             <!--about-->
-    <!-- <section class="about">
+     <section class="about">
         <div class="container">
         <h2 class="about-title">Our Team</h2>
         <ul class="about-list list">
           <li class="about-link link">
-            <img src="./images/qimg.jpg" alt="Mark Guerrero" width="264" height="260" >
+            <img srcset="./images/mark.jpg 1x, ./images/mark-2x.jpg 2x" src="./images/mark.jpg" alt="Mark Guerrero" width="264" height="260" >
             <div class="about-foto">
             <h3 class="about-after-title">Mark Guerrero</h3>
             <p class="about-pre-title">Product Designer</p>
@@ -139,24 +183,24 @@
             <ul class="about-soc-list">
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg></a></li>
                   <li class="about-soc-item">
                     <a class="about-soc-link" href="">
-                      <svg class="about-soc-icon" width="16" haigth="16">
+                      <svg class="about-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg></a>
                   </li>
                   <li class="about-soc-item">
                     <a class="about-soc-link" href="">
-                      <svg class="about-soc-icon" width="16" haigth="16">
+                      <svg class="about-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg></a>
                   </li>
                   <li class="about-soc-item">
                     <a class="about-soc-link" href="">
-                      <svg class="about-soc-icon" width="16" haigth="16">
+                      <svg class="about-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg></a>
                   </li>
@@ -165,32 +209,32 @@
           </li>
 
           <li class="about-link link">
-            <img src="./images/aimg.jpg" alt="Tom Ford" width="264" height="260" >
+            <img srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x" 1x src="./images/aimg.jpg" alt="Tom Ford" width="264" height="260" >
             <div class="about-foto">
             <h3 class="about-after-title">Tom Ford</h3>
             <p class="about-pre-title">Frontend Developer</p>
             <ul class="about-soc-list">
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg></a>
               </li>
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg></a>
               </li>
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg></a>
               </li>
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg></a>
               </li>
@@ -199,32 +243,32 @@
           </li>
 
           <li class="about-link link">
-            <img src="./images/zimg.jpg" alt="Camila Garcia" width="264" height="260" >
+            <img srcset="./images/camila.jpg 1x, ./images/camila-2x.jpg 2x" src="./images/zimg.jpg" alt="Camila Garcia" width="264" height="260" >
             <div class="about-foto">
             <h3 class="about-after-title">Camila Garcia</h3>
             <p class="about-pre-title">Marketing</p>
             <ul class="about-soc-list">
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg></a>
               </li>
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg></a>
               </li>
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg></a>
               </li>
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg></a>
               </li>
@@ -233,32 +277,32 @@
           </li>
 
           <li class="about-link link">
-            <img src="./images/wimg.jpg" alt="Daniel Wilson" width="264" height="260" >
+            <img srcset="./images/daniel.jpg 1x, ./images/daniel-2x.jpg 2x" src="./images/wimg.jpg" alt="Daniel Wilson" width="264" height="260" >
             <div class="about-foto">
             <h3 class="about-after-title">Daniel Wilson</h3>
             <p class="about-pre-title">UI Designer</p>
             <ul class="about-soc-list">
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg></a>
               </li>
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg></a>
               </li>
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg></a>
               </li>
               <li class="about-soc-item">
                 <a class="about-soc-link" href="">
-                  <svg class="about-soc-icon" width="16" haigth="16">
+                  <svg class="about-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg></a>
               </li>
@@ -267,7 +311,7 @@
           </li>
         </ul>
         </div>
-      </section>  -->
+      </section>   
                                          <!--test-->
       <!-- <section class="test">
 <div class="container">
@@ -276,42 +320,42 @@
   <ul class="test-list">
     <li class="test-item">
       <a href="" class="test-link">
-        <svg class="test-icon" width="104" hight="56">
+        <svg class="test-icon" width="104" height="56">
           <use href="./images/icons.svg#icon-yaco"></use>
         </svg>
       </a>
     </li>
     <li class="test-item">
       <a href="" class="test-link">
-        <svg class="test-icon" width="104" hight="56">
+        <svg class="test-icon" width="104" height="56">
           <use href="./images/icons.svg#icon-tagline"></use>
         </svg>
       </a>
     </li>
     <li class="test-item">
       <a href="" class="test-link">
-        <svg class="test-icon" width="104" hight="56">
+        <svg class="test-icon" width="104" height="56">
           <use href="./images/icons.svg#icon-company"></use>
         </svg>
       </a>
     </li>
     <li class="test-item">
       <a href="" class="test-link">
-        <svg class="test-icon" width="104" hight="56">
+        <svg class="test-icon" width="104" height="56">
           <use href="./images/icons.svg#icon-foster"></use>
         </svg>
       </a>
     </li>
     <li class="test-item">
       <a href="" class="test-link">
-        <svg class="test-icon" width="104" hight="56">
+        <svg class="test-icon" width="104" height="56">
           <use href="./images/icons.svg#icon-brand"></use>
         </svg>
       </a>
     </li>
     <li class="test-item">
       <a href="" class="test-link">
-        <svg class="test-icon" width="104" hight="56">
+        <svg class="test-icon" width="104" height="56">
           <use href="./images/icons.svg#icon-tag"></use>
         </svg>
       </a>
@@ -334,22 +378,22 @@
         <h3 class="footer-text">Social media</h3>
         <ul class="footer-list">
           <li class="footer-item"><a href="" class="footer-link">
-            <svg class="footer-icon" width="24" hight="24">
+            <svg class="footer-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg></a>
           </li>
           <li class="footer-item"><a href="" class="footer-link">
-            <svg class="footer-icon" width="24" hight="24">
+            <svg class="footer-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-twitter"></use>
             </svg></a>
           </li>
           <li class="footer-item"><a href="" class="footer-link">
-            <svg class="footer-icon" width="24" hight="24">
+            <svg class="footer-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-facebook"></use>
             </svg></a>
           </li>
           <li class="footer-item"><a href="" class="footer-link">
-            <svg class="footer-icon" width="24" hight="24">
+            <svg class="footer-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-linkedin"></use>
             </svg></a>
           </li>
@@ -365,24 +409,19 @@
      </div>
     
       <button type="submit" class="online-btn"><span class="btn-text">Subscribe</span>
-        <svg class="btn-icon" width="24" hight="20">
+        <svg class="btn-icon" width="24" height="20">
         <use href="./images/icons.svg#icon-Frame"></use>
       </svg></button>
        </form>
       </div>
     </footer>  -->
 
-                                <!--mobile-menu-->
-    <div class="mobile-menu" js-menu-container id="mobile-menu">
-  <button class="btn-mobile" type="button" js-close-menu><svg width="24" hight="24">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg></button>
-    </div> 
+       
 
                                   <!--modal--> 
-     <!-- <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
       <div class="modal"><button type="button" class="modal-close" data-modal-close>
-        <svg class="modal-close-icon" width="24" hight="24">
+        <svg class="modal-close-icon" width="24" height="24">
           <use href="./images/icons.svg#icon-Vector"></use></svg></button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
       <form class="modal-form">
@@ -423,12 +462,12 @@
         <button class="modal-button" type="submit">Send</button>
       </form>
       </div>
-    </div> -->
+    </div> 
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"></script>
-    <!-- <script src="./js/modal.js"></script>  -->
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
 </html>

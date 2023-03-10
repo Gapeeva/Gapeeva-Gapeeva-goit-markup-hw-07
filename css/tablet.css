@@ -4,3 +4,44 @@
             /* max-width: 768px; */
      }
  } 
+.hero {
+    background-color: var(--main-color);
+    width: 428px;
+    height: 432px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(var(--hero-gradient)), url(../images/fon-tablet.jpg);
+}
+
+
+ @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+     .banner {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                 rgba(46, 47, 66, 0.7)), url('../images/fon-tablet@2x.jpg')
+     }
+ }
+
+
+ .section {
+     text-align: center;
+     background-color: var(--b-active-color);
+     padding-bottom: 120px;
+     padding-top: 120px;
+ }
+
+ .section-list .section-link+.section-link {
+     margin-left: 24px;
+ }
+
+ .section-title {
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 1.1;
+     color: var(--main-color);
+     margin-bottom: 72px;
+ }
