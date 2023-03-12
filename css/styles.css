@@ -244,6 +244,10 @@ span {
  .mob-soc-icon {
     fill: var(--b-second-color);
  } 
+
+.no-scroll {
+     overflow: hidden;
+}
 /*-----------hero------------*/
 .hero {
     background-color: var(--main-color);
