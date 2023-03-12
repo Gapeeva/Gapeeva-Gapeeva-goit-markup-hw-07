@@ -245,9 +245,9 @@ span {
     fill: var(--b-second-color);
  } 
 
-.no-scroll {
+ .no-scroll {
      overflow: hidden;
-}
+} 
 /*-----------hero------------*/
 .hero {
     background-color: var(--main-color);
