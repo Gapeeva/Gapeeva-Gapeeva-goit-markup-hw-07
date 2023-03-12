@@ -257,6 +257,7 @@ span {
     margin-left: auto;
     padding-top: 112px;
     padding-bottom: 112px;
+    background-repeat: no-repeat;
     background-size: 100%; 
     background-position: center;
     background-image: linear-gradient(var(--hero-gradient)), url(../images/fon.jpg);
