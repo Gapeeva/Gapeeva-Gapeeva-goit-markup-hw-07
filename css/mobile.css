@@ -13,43 +13,74 @@
     stroke: #2E2F42;
 } 
 
-@media screen and (max-width: 767px) {
-
+ @media screen and (max-width: 767px) {
     .header-list,
     .header-address {
         display: none;
     }
-}
-@media screen and (max-width: 767px) {
+} 
 
-   
-    {
-        display: none;
-    }
-}
+  /* .header-list,
+  .header-address {
+      display: none;
+  } */
 
-@media screen and (max-width: 767px) {
-
-   
-    .advantage-link {
-        display: none;
-    }
-}
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .banner {
+    .hero{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url('../images/fon@2x.jpg')
     }
 }
+@media screen and (min-width: 480px) {
+.advantage-link {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .advantage-title {
+        text-align: center;
+    }
+}
+/* @media screen and (min-width: 480px) {
+.advantage-after-title {
+        width: 396px;
+        height: 48px;
+        margin-bottom: 72px;
+        color: var(--second-color);
+}
+} */
 
+@media screen and (max-width: 1159px) {
+    .advantage-block {
+        display: none;
+    }
+} 
 
-
-
-@media screen and (max-width: 767px) {
-    .advantage-block, .advantage-link {
+@media screen and (max-width: 1159px) {
+    .section {
         display: none;
     }
 }
 
+@media screen and (max-width: 767px) {
+    .footer-logo{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-block {
+    
+            text-align: center;
+            margin-top: 72px;
+            /* width: 208px;
+        height: 80px; */
+            /* margin-right: 80px; */
+    
+    }
+}
