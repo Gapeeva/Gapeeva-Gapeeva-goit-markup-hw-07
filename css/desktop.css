@@ -82,14 +82,29 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
  }
  @media screen and (min-width: 1120px) {
  .online-field {
-    text-align: inherit;
+   
+margin-left: 80px;
+    text-align: left;
          margin-top: 0px; 
       }
      }
 
-  /* @media screen and (max-width: 1159px) {
-      .footer-block {
-          margin-left: 120px;
+  @media screen and (min-width: 1120px) {
+      .online-input {
+        width: 296px;
+        margin-right: 24px;
           margin-top: 0;
       }
-  } */
+  }
+
+        @media screen and (min-width: 1120px) {
+            .online-field {
+                margin-left: 80px;
+            }
+        }
+
+                   @media screen and (min-width: 1120px) {
+                       .online-btn {
+                           margin-top: 0;
+                       }
+                   }
