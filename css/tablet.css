@@ -207,7 +207,7 @@ padding-bottom: 96px;
    gap: 24px;
      }
     }
-   @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px) and (max-width: 1159px) {
     .footer-block {
 margin-left: 24px;
 margin-top: 0;
