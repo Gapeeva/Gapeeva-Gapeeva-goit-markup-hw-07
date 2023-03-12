@@ -156,8 +156,8 @@ span {
     position: relative;
     width: 100%;
     height: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -217,10 +217,10 @@ span {
     color: var(--second-color);  
 }
 
-.menu-address {
+/* .menu-address {
     padding-top: 70px;
     padding-bottom: 48px;
-}
+} */
 
 .menu-item {
     margin-bottom: 40px;
@@ -257,6 +257,7 @@ span {
     margin-left: auto;
     padding-top: 112px;
     padding-bottom: 112px; 
+    background-position: center;
     background-image: linear-gradient(var(--hero-gradient)), url(../images/fon.jpg);
 } 
 
